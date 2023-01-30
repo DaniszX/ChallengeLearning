@@ -15,16 +15,13 @@ if (wiek < 30 && wiek >= 18)
 }
 else if (wiek > 30)
 {
-    if (płeć == "Kobieta")
+    if (płeć == "Kobieta" && imie == "Ewa" && wiek == 33)
     {
-        if (imie == "Ewa" && wiek == 33)
-        {
-            Console.WriteLine("Ewa, lat 33.");
-        }
-        else
-        {
-            Console.WriteLine("Kobieta po 30-tce.");
-        }
+        Console.WriteLine("Ewa, lat 33.");
+    }
+    else if (płeć == "Kobieta")
+    {
+        Console.WriteLine("Kobieta po 30-tce.");
     }
     else
     {
