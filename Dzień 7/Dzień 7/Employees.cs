@@ -3,9 +3,9 @@
     public class Employee
     {
         public static string Grades = "Highest Grade";
-        private List<int> grade = new List<int>();
+        private List<float> grade = new List<float>();
 
-        public Employee(int grade, string Name, string Surname, string Age)
+        public Employee(float grade, string Name, string Surname, string Age)
         {
             this.Name = Name;
             this.Surname = Surname;
@@ -16,7 +16,7 @@
         public string Surname { get; private set; }
         public string Age { get; private set; }
 
-        public int Grade
+        public float Grade
         {
             get
             {
@@ -30,6 +30,13 @@
         public void RemoveScore(int grade)
         {
             this.grade.Add(- grade);
+        }
+
+        public  Statistics GetStatistics()
+        {
+            var statistics = new Statistics();
+
+            return statistics;
         }
     }
 }

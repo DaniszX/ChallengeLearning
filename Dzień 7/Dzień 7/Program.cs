@@ -1,8 +1,8 @@
-﻿using Dzień_7;
+﻿using Employees;
 
-var sum1 = 0;
-var sum2 = 0;
-var sum3 = 0;
+float sum1 = 0;
+float sum2 = 0;
+float sum3 = 0;
 Employee number1 = new Employee(sum1, "Anakin", "Skywalker", "22");
 Employee number2 = new Employee(sum2, "Obi-Wan", "Kenobi", "38");
 Employee number3 = new Employee(sum3, "Padme", "Amidala", "27");
@@ -29,8 +29,8 @@ sum1 = number1.Grade;
 sum2 = number2.Grade;
 sum3 = number3.Grade;
 
-int[] result = new int[] { sum1, sum2, sum3 };
-int maxResult = result.Max();
+float[] result = new float[] { sum1, sum2, sum3 };
+float maxResult = result.Max();
 
 List<Employee> employees = new List<Employee>()
 {
