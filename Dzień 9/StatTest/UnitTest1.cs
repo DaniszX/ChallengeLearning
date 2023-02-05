@@ -13,9 +13,6 @@ namespace StatTest
             employee1.AddGrade(8);
             employee1.AddGrade(2);
             var statistics1 = employee1.GetStatistics();
-            Console.WriteLine($"Average : {statistics1.Average:N2}");
-            Console.WriteLine($"Max : {statistics1.Max}");
-            Console.WriteLine($"Min : {statistics1.Min}");
             //act
 
             //assert
